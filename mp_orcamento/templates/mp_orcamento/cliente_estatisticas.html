@@ -1,0 +1,22 @@
+<h2>Estatísticas dos Clientes</h2>
+<table border="2">
+    <thead>
+        <tr>
+            <th>Quantidade de Clientes</th>
+            <th>Cliente com maior custo de orçamento</th>
+            <th>Cliente com menor custo de orçamento</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ clientes }} cliente(s).</td>
+            <td>{{ orcamento_maior_custo.data_hora }}, 
+                    {{orcamento_maior_custo.cliente.nome}},
+                    R$ {{orcamento_maior_custo.custo_total}}.</td>
+            <td>{{ orcamento_menor_custo.data_hora }}, 
+                    {{orcamento_menor_custo.cliente.nome}},
+                    R$ {{orcamento_menor_custo.custo_total}}.</td>
+        </tr>
+    </tbody>
+</table>
+

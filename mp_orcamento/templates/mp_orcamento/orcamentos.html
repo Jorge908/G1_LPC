@@ -1,0 +1,21 @@
+<h2>Lista de orçamentos</h2>
+<table border="2">
+    <thead>
+        <tr>
+            <th>Nome do cliente</th>
+            <th>E-mail do cliente</th>
+            <th>Custo total (R$)</th>
+            <th>Data e hora</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for orcamento in orcamentos %}
+        <tr>
+            <td>{{ orcamento.cliente.nome }}</td>
+            <td>{{ orcamento.cliente.email }}</td>
+            <td>{{ orcamento.custo_total }}</td>
+            <td>{{ orcamento.data_hora }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
